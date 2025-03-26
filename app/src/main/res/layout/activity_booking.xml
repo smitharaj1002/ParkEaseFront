@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Parking Slot Details -->
+    <TextView
+        android:id="@+id/tvParkingSlotDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parking Slot Details"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Select Duration Text -->
+    <TextView
+        android:id="@+id/tvSelectDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Duration:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Duration Radio Group -->
+    <RadioGroup
+        android:id="@+id/radioGroupDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb30Min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30 Minutes"
+            android:padding="12dp"
+            android:minHeight="48dp" />
+
+        <RadioButton
+            android:id="@+id/rb1Hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 Hour"
+            android:padding="12dp"
+            android:minHeight="48dp" />
+
+        <RadioButton
+            android:id="@+id/rb2Hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2 Hours"
+            android:padding="12dp"
+            android:minHeight="48dp" />
+    </RadioGroup>
+
+    <!-- Payment Method Text -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Payment Method:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Payment Method Radio Group -->
+    <RadioGroup
+        android:id="@+id/radioGroupPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbUPI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPI"
+            android:padding="12dp"
+            android:minHeight="48dp" />
+
+        <RadioButton
+            android:id="@+id/rbCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Debit/Credit Card"
+            android:padding="12dp"
+            android:minHeight="48dp" />
+
+        <RadioButton
+            android:id="@+id/rbCash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cash on Spot"
+            android:padding="12dp"
+            android:minHeight="48dp" />
+    </RadioGroup>
+
+    <!-- Confirm Booking Button -->
+    <Button
+        android:id="@+id/btnConfirmBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Booking"
+        android:textSize="16sp"
+        android:textColor="#FFF"
+        android:backgroundTint="#2196F3"
+        android:layout_marginTop="24dp" />
+
+    <!-- View Booking Status Button -->
+    <Button
+        android:id="@+id/btnViewBookingStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Booking Status"
+        android:textSize="16sp"
+        android:textColor="#FFF"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnViewBookingStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Booking Status"
+        android:textSize="16sp"
+        android:textColor="#FFF"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

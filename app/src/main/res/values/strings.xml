@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ParkEaseApp</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="app_logo">App Logo</string>
 </resources>
