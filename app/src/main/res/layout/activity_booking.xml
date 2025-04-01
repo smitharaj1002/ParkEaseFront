@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="#C5EDB3"
     android:gravity="center">
 
     <!-- Parking Slot Details -->
@@ -60,6 +61,16 @@
             android:padding="12dp"
             android:minHeight="48dp" />
     </RadioGroup>
+    <TextView
+        android:id="@+id/tvCalculatedPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estimated Price: ₹0"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="16dp"
+        android:visibility="visible" />
 
     <!-- Payment Method Text -->
     <TextView
@@ -104,6 +115,69 @@
             android:minHeight="48dp" />
     </RadioGroup>
 
+    <!-- UPI App Layout with Smaller Icons -->
+    <LinearLayout
+        android:id="@+id/upiAppLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:weightSum="4">
+
+        <!-- GPay Icon -->
+        <ImageView
+            android:id="@+id/imgGPay"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/gpay"
+            android:contentDescription="GPay"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="8dp"/>
+
+        <!-- PhonePe Icon -->
+        <ImageView
+            android:id="@+id/imgPhonePe"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/phonepe"
+            android:contentDescription="PhonePe"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="8dp"/>
+
+        <!-- Paytm Icon -->
+        <ImageView
+            android:id="@+id/imgPaytm"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/paytm"
+            android:contentDescription="Paytm"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="8dp"/>
+
+        <!-- Amazon Pay Icon -->
+        <ImageView
+            android:id="@+id/imgAmazonPay"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/amazonpay"
+            android:contentDescription="Amazon Pay"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+
+
+
     <!-- Confirm Booking Button -->
     <Button
         android:id="@+id/btnConfirmBooking"
@@ -116,24 +190,6 @@
         android:layout_marginTop="24dp" />
 
     <!-- View Booking Status Button -->
-    <Button
-        android:id="@+id/btnViewBookingStatus"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View Booking Status"
-        android:textSize="16sp"
-        android:textColor="#FFF"
-        android:backgroundTint="#4CAF50"
-        android:layout_marginTop="16dp" />
 
-    <Button
-        android:id="@+id/btnViewBookingStatus"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View Booking Status"
-        android:textSize="16sp"
-        android:textColor="#FFF"
-        android:backgroundTint="#4CAF50"
-        android:layout_marginTop="16dp"/>
 
 </LinearLayout>

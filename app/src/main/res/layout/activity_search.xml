@@ -1,10 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#C5EDB3"
+    tools:context=".SearchParkingActivity">
+
+    <!-- Header Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Parking Near You"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#C5EDB3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
 
     <!-- Search Input -->
     <EditText
@@ -12,20 +25,49 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter location"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColor="#000"
+        android:textColorHint="#999"
+        android:background="@drawable/input_field_bg"
+        android:padding="16dp"/>
 
     <!-- Search Button -->
     <Button
         android:id="@+id/btnSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Search Parking Slots" />
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        android:backgroundTint="#4CAF50"
+        android:text="Search Parking Slots"
+        android:textColor="#FFF" />
+
+    <!-- Progress Bar (Initially Hidden) -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
 
     <!-- Google Map Fragment -->
+    <Button
+        android:id="@+id/btnViewBookingStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/purple_500"
+        android:backgroundTint="#4CAF50"
+        android:text="View Booking Status"
+        android:textColor="#FFF" />
+
     <FrameLayout
         android:id="@+id/mapContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
+
+    <!-- View Booking Status Button -->
 
 </LinearLayout>

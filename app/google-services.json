@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "975465505691",
+    "project_id": "parkeaseapp-9570a",
+    "storage_bucket": "parkeaseapp-9570a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975465505691:android:2c397b37b5cb90c7bdf73e",
+        "android_client_info": {
+          "package_name": "com.example.ParkEaseApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVjix5UOYNMhkCgN8Gk2YGHf78bD1DWgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975465505691:android:6ecd674c3b3ad167bdf73e",
+        "android_client_info": {
+          "package_name": "com.example.parkeaseapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVjix5UOYNMhkCgN8Gk2YGHf78bD1DWgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

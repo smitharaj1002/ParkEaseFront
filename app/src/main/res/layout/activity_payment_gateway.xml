@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:background="#C5EDB3"
     tools:context=".PaymentGatewayActivity">
 
     <TextView

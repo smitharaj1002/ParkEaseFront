@@ -24,9 +24,10 @@ public class ConfirmationActivity extends AppCompatActivity {
 
         // Redirect to Map on Button Click
         btnBackToHome.setOnClickListener(v -> {
-            Intent intent = new Intent(ConfirmationActivity.this, MapsActivity.class);
+            Intent intent = new Intent(ConfirmationActivity.this, SearchParkingActivity.class);
             startActivity(intent);
             finish();
+
         });
     }
 }

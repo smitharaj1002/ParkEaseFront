@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="#C5EDB3"
     android:gravity="center">
 
     <!-- Booking Status Header -->
@@ -18,19 +18,30 @@
         android:textColor="#000"
         android:layout_marginBottom="16dp"/>
 
-    <!-- Booking Status Display -->
+    <!-- Booking Status Display with Accessible Label -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:contentDescription="Booking status information displayed here.">
 
-        <TextView
-            android:id="@+id/tvBookingStatus"
+        <!-- Container for Dynamic Booking Status -->
+        <LinearLayout
+            android:id="@+id/bookingLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fetching booking status..."
-            android:textSize="16sp"
-            android:textColor="#333"/>
+            android:orientation="vertical">
+
+            <!-- Placeholder Text for Accessibility -->
+            <TextView
+                android:id="@+id/tvBookingStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fetching booking status..."
+                android:textSize="16sp"
+                android:textColor="#333"
+                android:contentDescription="Fetching booking status message"/>
+        </LinearLayout>
     </ScrollView>
 
     <!-- Back to Home Button -->

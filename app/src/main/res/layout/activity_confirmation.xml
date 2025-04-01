@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:background="#C5EDB3"
     tools:context=".ConfirmationActivity">
 
     <TextView
@@ -22,6 +23,7 @@
         android:id="@+id/btnBackToHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
         android:text="Back to Home"
         android:textStyle="bold" />
 </LinearLayout>
